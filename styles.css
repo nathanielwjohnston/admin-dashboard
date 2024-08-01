@@ -28,3 +28,29 @@ body {
   font-family: Avenir, Montserrat, Corbel, 
   'URW Gothic', source-sans-pro, sans-serif;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+}
+
+.header, .main, .sidebar {
+  border: 1px solid;
+}
+
+.header {
+  grid-column: 2;
+  grid-row: 1
+}
+
+.main {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
