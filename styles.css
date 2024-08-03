@@ -97,6 +97,18 @@ body {
   flex-grow: 1;
 }
 
+.announcement div {
+  /* Add Ellipsis 
+  https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text
+  */
+  display: -webkit-box;
+  max-width: 100%;
+  /* Line clamp of 3 ensures the header does not get squished */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .trending {
   grid-column: 2;
   grid-row: 2;
