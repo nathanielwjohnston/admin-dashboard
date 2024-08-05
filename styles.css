@@ -186,6 +186,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   grid-template-rows: repeat(2, 1fr);
+  border-style: dashed none none none;
+  border-color: var(--secondary-colour);
 }
 
 .profile-picture {
@@ -204,8 +206,22 @@ body {
 }
 
 .announcement, .trending-item {
-  padding: 1em;
-  font-size: 0.8em;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+.announcements-container, .trending-list {
+  border-block: solid;
+  border-color: var(--secondary-colour);
+}
+
+.announcement:nth-child(2) {
+  border-style: dashed none dashed none;
+  border-color: var(--secondary-colour);
+}
+
+.trending-item:first-child {
+  border: none;
 }
 
 /* ==========================================================================
