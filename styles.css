@@ -78,16 +78,23 @@ body {
 }
 
 .search-container {
-  display: grid;
+  display: flex;
   justify-items: start;
   align-items: center;
+  gap: 1.4em;
 }
 
 .search-container input[type="search"] {
-  width: 250%;
+  width: 275%;
   background-color: var(--primary-colour-light);
   border: none;
   height: 1.8em;
+}
+
+.search-icon {
+  background-image: url(assets/magnify.svg);
+  height: 2em;
+  width: 2em;
 }
 
 .search-container, .user-welcome-container {
