@@ -332,6 +332,18 @@ body {
   border: none;
 }
 
+.project-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.project-actions div {
+  background-image: var(--project-icons);
+  height: 2em;
+  width: 2em;
+  place-self: center;
+}
 /* ==========================================================================
    Sidebar Styling 
    ========================================================================== */
