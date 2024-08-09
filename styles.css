@@ -356,3 +356,11 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a:visited {
+  color: white;
+}
