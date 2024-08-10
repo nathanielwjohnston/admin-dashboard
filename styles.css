@@ -79,6 +79,12 @@ body {
   border: none;
   color: white;
   box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.24);
+  cursor: grab;
+}
+
+.user-actions .user-action-button:hover {
+  background-color: var(--primary-colour-light);
+  color: black;
 }
 
 .search-container {
@@ -114,6 +120,10 @@ body {
   width: 2em;
 }
 
+.notification-notifier:hover {
+  cursor: grab;
+}
+
 .user-profile-container, .user-actions {
   padding-right: 3em;
 }
@@ -131,6 +141,10 @@ body {
   border: 1px solid;
   background-image: url(assets/avatar-6.svg);
   background-position: center;
+}
+
+.user-profile-link-container {
+  cursor: grab;
 }
 
 .user-profile-container .user-profile-link-container {
@@ -156,6 +170,19 @@ body {
 .welcome-tag {
   font-size: 0.8em;
   align-self: end;
+}
+
+.user-name-reference a {
+  text-decoration: none;
+}
+
+.user-name-reference a:hover {
+  text-decoration: underline;
+}
+
+.user-name-reference a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .user-name-reference h2::after {
@@ -205,6 +232,20 @@ body {
   box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.24);
 }
 
+.project a {
+  text-decoration: none;
+}
+
+.project a:hover * {
+  color: var(--primary-colour);
+  text-decoration: none;
+}
+
+.project a:visited {
+  color: black;
+  text-decoration: none;
+}
+
 .project-info {
   padding: 1em;
   background-color: white;
@@ -248,6 +289,20 @@ body {
   background-color: white;
 }
 
+.announcement a {
+  text-decoration: none;
+}
+
+.announcement a:hover * {
+  color: var(--primary-colour);
+  text-decoration: none;
+}
+
+.announcement a:visited {
+  color: black;
+  text-decoration: none;
+}
+
 .announcement div {
   /* Add Ellipsis 
   https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text
@@ -289,6 +344,15 @@ body {
   border-color: var(--secondary-colour);
 }
 
+.trending-item:hover {
+  cursor: grab;
+  color: var(--primary-colour);
+}
+
+.trending-item:hover .profile-picture {
+  border-color: black;
+}
+
 .trending-item .profile-picture {
   background-image: var(--avatar);
   height: 4em;
@@ -297,7 +361,6 @@ body {
   border-radius: 50%;
   border: 1px solid;
 }
-
 
 .profile-picture {
   grid-column: 1;
@@ -346,6 +409,11 @@ body {
   width: 2em;
   place-self: center;
 }
+
+.project-actions div:hover {
+  cursor: grab;
+}
+
 /* ==========================================================================
    Sidebar Styling 
    ========================================================================== */
@@ -424,6 +492,18 @@ body {
 .navigation-links-list .navigation-link::before {
   height: 1.3em;
   width: 1.3em;
+}
+
+.navigation-links-list a, .dashboard-home a {
+  text-decoration: none;
+}
+
+.navigation-links-list a:hover, .dashboard-home a:hover {
+  text-decoration: underline;
+}
+
+.navigation-links-list a:visited, .dashboard-home a:visited {
+  color: white;
 }
 
 .attribution {
