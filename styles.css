@@ -93,6 +93,8 @@ body {
   background-color: var(--primary-colour-light);
   border: none;
   height: 1.8em;
+  padding-left: 0.5em;
+  padding-top: 0.1em;
 }
 
 .search-icon {
