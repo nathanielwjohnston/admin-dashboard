@@ -359,14 +359,69 @@ body {
   color: white;
 }
 
+.dashboard-home {
+  display: flex;
+  gap: 0.6em;
+}
+
 .dashboard-home h1 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
+}
+
+.dashboard-home::before {
+  content: url(assets/view-dashboard-variant-outline.svg);
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .navigation-link {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: bold;
+  display: flex;
+  gap: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.navigation-link.home::before {
+  content: url(assets/home-outline.svg);
+}
+
+.navigation-link.profile::before {
+  content: url(assets/account-outline.svg);
+}
+
+.navigation-link.messages::before {
+  content: url(assets/chat-outline.svg);
+}
+
+.navigation-link.history::before {
+  content: url(assets/history.svg);
+}
+
+.navigation-link.tasks::before {
+  content: url(assets/file-document-multiple-outline.svg);
+}
+
+.navigation-link.communities::before {
+  content: url(assets/account-group-outline.svg);
+}
+
+.navigation-link.settings::before {
+  content: url(assets/wrench-outline.svg);
+}
+
+.navigation-link.support::before {
+  content: url(assets/help-circle-outline.svg);
+}
+
+.navigation-link.privacy::before {
+  content: url(assets/security.svg);
+}
+
+.navigation-links-list .navigation-link::before {
+  height: 1.3em;
+  width: 1.3em;
 }
 
 .attribution {
